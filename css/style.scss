@@ -69,7 +69,8 @@ section#bg1 {
   background-image: url(/img/bus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  //background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
   background-position: top-center;
     h1 {
       font-size: 1.5em;
@@ -89,6 +90,7 @@ section#bg2 {
   text-align: center;
   background: url(/img/slackline.jpg) no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
         h2#left {
       position: relative;
       margin-top: 10%;
