@@ -85,10 +85,10 @@ section#bg1 {
       text-align: right;
       position: relative;
       margin-top: 10%;
-      animation: fadein 2s;
-      -moz-animation: fadein 2s; /* Firefox */
-      -webkit-animation: fadein 2s; /* Safari and Chrome */
-      -o-animation: fadein 2s; /* Opera */
+      animation: fadein 4s;
+      -moz-animation: fadein 4s; /* Firefox */
+      -webkit-animation: fadein 4s; /* Safari and Chrome */
+      -o-animation: fadein 4s; /* Opera */
       @include span-columns(12);
       @include media($screen) {
         font-size: 2em;

@@ -73,12 +73,12 @@ section#bg1 {
     text-align: right;
     position: relative;
     margin-top: 10%;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
     /* Firefox */
-    -webkit-animation: fadein 2s;
+    -webkit-animation: fadein 4s;
     /* Safari and Chrome */
-    -o-animation: fadein 2s;
+    -o-animation: fadein 4s;
     /* Opera */
     float: left;
     display: block;
