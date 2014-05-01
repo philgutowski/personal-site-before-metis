@@ -52,13 +52,9 @@ h2 {
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  margin-left: 8.5298%;
-  position: fixed; }
+  margin-left: 8.5298%; }
   .container:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 600px) {
-    .container {
-      position: relative; } }
 
 section {
   position: relative;

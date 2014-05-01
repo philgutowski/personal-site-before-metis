@@ -57,10 +57,10 @@ h2 {
 .container {
   @include span-columns(10);
   @include shift(1);
-  position: fixed;
-  @include media($screen) {
-    position: relative;
-  }
+  //position: fixed;
+  //@include media($screen) {
+    //position: relative;
+  //}
 
 }
 
