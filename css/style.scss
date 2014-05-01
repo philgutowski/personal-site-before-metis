@@ -80,10 +80,15 @@ section#bg1 {
   
   
     h1 {
+
       font-size: 1.5em;
       text-align: right;
       position: relative;
       margin-top: 10%;
+      animation: fadein 2s;
+      -moz-animation: fadein 2s; /* Firefox */
+      -webkit-animation: fadein 2s; /* Safari and Chrome */
+      -o-animation: fadein 2s; /* Opera */
       @include span-columns(12);
       @include media($screen) {
         font-size: 2em;
@@ -92,6 +97,7 @@ section#bg1 {
     }
 
 }
+
 
 section#bg2 {
   text-align: center;
@@ -132,4 +138,36 @@ section#bg2 {
 
 }
 
-
+// ----------------- Animation -----------------
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -73,6 +73,13 @@ section#bg1 {
     text-align: right;
     position: relative;
     margin-top: 10%;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -134,3 +141,31 @@ section#bg2 {
   section#bg2 h2 {
     padding: 10px;
     border-radius: 10%; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
