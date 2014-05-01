@@ -1,7 +1,7 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
-$screen: new-breakpoint(min-width 600px);
+$screen: new-breakpoint(min-width 500px);
 
 html, body, .scroller, .container {
   font-family: 'Bitter', serif;
@@ -83,7 +83,7 @@ section#bg1 {
       font-size: 1.5em;
       text-align: right;
       position: relative;
-      margin-top: 20%;
+      margin-top: 10%;
       @include span-columns(12);
       @include media($screen) {
         font-size: 2em;
@@ -105,7 +105,8 @@ section#bg2 {
     }
         h2#left {
       position: relative;
-      margin-top: 10%;
+      margin-top: 5%;
+      font-size: 1em;
       background-color: rgba(220, 220, 220, .75);
       @include span-columns(12);
         @include media($screen) {
@@ -114,7 +115,8 @@ section#bg2 {
     }
      h2.right {
       position: relative;
-      margin-top: 10%;
+      margin-top: 5%;
+      font-size: 1em;
       background-color: rgba(220, 220, 220, .75);
       @include span-columns(12);
         @include media($screen) {
