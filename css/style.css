@@ -9,6 +9,14 @@ html, body, .scroller, .container {
   height: 100%;
   width: 100%; }
 
+textarea {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
 a {
   text-decoration: none;
   color: darkred; }
@@ -95,8 +103,7 @@ section#bg2 {
       background-attachment: fixed; } }
   section#bg2 h2#left {
     position: relative;
-    margin-top: 5%;
-    font-size: 1em;
+    margin-top: 10%;
     background-color: rgba(220, 220, 220, 0.75);
     float: left;
     display: block;
@@ -114,8 +121,7 @@ section#bg2 {
           margin-right: 0; } }
   section#bg2 h2.right {
     position: relative;
-    margin-top: 5%;
-    font-size: 1em;
+    margin-top: 10%;
     background-color: rgba(220, 220, 220, 0.75);
     float: left;
     display: block;
