@@ -52,20 +52,26 @@ h2 {
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  margin-left: 8.5298%; }
+  margin-left: 8.5298%;
+  position: fixed; }
   .container:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 600px) {
+    .container {
+      position: relative; } }
 
 section {
   position: relative;
   height: 100%; }
 
 section#bg1 {
-  background: url(/img/bus.jpg);
+  background-image: url(/img/bus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: top-center; }
+  -webkit-background-size: cover; }
+  @media screen and (min-width: 600px) {
+    section#bg1 {
+      background-attachment: fixed; } }
   section#bg1 h1 {
     font-size: 1.5em;
     text-align: right;
@@ -83,8 +89,14 @@ section#bg1 {
 
 section#bg2 {
   text-align: center;
-  background: url(/img/slackline.jpg) no-repeat center center fixed;
-  background-size: cover; }
+  background: url(/img/slackline.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover; }
+  @media screen and (min-width: 600px) {
+    section#bg2 {
+      background-attachment: fixed; } }
   section#bg2 h2#left {
     position: relative;
     margin-top: 10%;

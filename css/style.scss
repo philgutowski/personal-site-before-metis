@@ -57,6 +57,10 @@ h2 {
 .container {
   @include span-columns(10);
   @include shift(1);
+  position: fixed;
+  @include media($screen) {
+    position: relative;
+  }
 
 }
 
@@ -70,8 +74,11 @@ section#bg1 {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
-  background-attachment: fixed;
-  background-position: top-center;
+    @include media($screen) {
+      background-attachment: fixed;
+    }
+  
+  
     h1 {
       font-size: 1.5em;
       text-align: right;
@@ -88,9 +95,14 @@ section#bg1 {
 
 section#bg2 {
   text-align: center;
-  background: url(/img/slackline.jpg) no-repeat center center fixed;
+  background: url(/img/slackline.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   -webkit-background-size: cover;
+    @include media($screen) {
+      background-attachment: fixed;
+    }
         h2#left {
       position: relative;
       margin-top: 10%;
