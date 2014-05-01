@@ -10,12 +10,6 @@ html, body, .scroller, .container {
   width: 100%;
 }
 
-textarea { 
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
 a {
   text-decoration: none;
   color: darkred;
@@ -105,6 +99,7 @@ section#bg2 {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  overflow: auto;
   -webkit-background-size: cover;
     @include media($screen) {
       background-attachment: fixed;
