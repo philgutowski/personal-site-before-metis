@@ -1,394 +1,216 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
+html, body, .scroller, .container {
+  font-family: 'Bitter', serif;
+  line-height: 2em;
+  height: 100%;
+  width: 100%; }
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
-}
+a {
+  text-decoration: none;
+  color: darkred; }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+a:hover {
+  text-decoration: underline; }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+a:visited {
+  color: darkgray; }
 
-hr {
+h1 {
+  font-size: 1.5em; }
+  @media screen and (min-width: 500px) {
+    h1 {
+      font-size: 2em; } }
+
+h2 {
+  font-size: 1.25em; }
+  @media screen and (min-width: 500px) {
+    h2 {
+      font-size: 1.5em; } }
+
+.ss-icon {
+  font-size: 2.5em;
+  line-height: 2em; }
+  @media screen and (max-width: 820px) {
+    .ss-icon {
+      font-size: 1.5em; } }
+  .ss-icon a {
+    color: inherit;
+    text-decoration: none; }
+
+.social-bar {
+  position: relative;
+  background-color: transparent;
+  margin-top: 0px;
+  z-index: 2;
+  margin-left: 64px;
+  margin-bottom: -80px;
+  background-color: transparent;
+  margin-top: 0px;
+  z-index: 2;
+  margin-left: 64px;
+  margin-bottom: -80px; }
+  .social-bar #facebook {
+    color: #3C5A99; }
+  .social-bar #twitter {
+    color: #55ACEE; }
+  .social-bar #youtube {
+    color: #CC181E; }
+  .social-bar #github {
+    color: #262626; }
+
+#tumblr {
+  position: fixed;
+  top: 0px;
+  left: 20px;
+  z-index: 2;
+  color: orangered; }
+
+.container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%; }
+  .container:last-child {
+    margin-right: 0; }
+
+section {
+  position: relative;
+  height: 100%; }
+
+section#bg1 {
+  background-image: url(/img/bus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover; }
+  @media screen and (min-width: 500px) {
+    section#bg1 {
+      background-attachment: fixed; } }
+  section#bg1 h1 {
+    font-size: 1.5em;
+    text-align: right;
+    position: relative;
+    margin-top: 10%;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    /* Firefox */
+    -webkit-animation: fadein 4s;
+    /* Safari and Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
+    float: left;
     display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+    margin-right: 2.35765%;
+    width: 100%; }
+    section#bg1 h1:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 500px) {
+      section#bg1 h1 {
+        font-size: 2em; } }
 
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
-body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
-
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #e44d26;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
-}
-
-.title {
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
+section#bg2 {
+  text-align: center;
+  background: url(/img/slackline.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  overflow: auto;
+  -webkit-background-size: cover; }
+  @media screen and (min-width: 500px) {
+    section#bg2 {
+      background-attachment: fixed; } }
+  section#bg2 h2#left {
+    position: relative;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    float: left;
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-
-    nav a {
+    margin-right: 2.35765%;
+    width: 100%; }
+    section#bg2 h2#left:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 500px) {
+      section#bg2 h2#left {
         float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
+        display: block;
+        margin-right: 2.35765%;
+        width: 40.29137%; }
+        section#bg2 h2#left:last-child {
+          margin-right: 0; } }
+  section#bg2 h2.right {
+    position: relative;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.5);
+    float: left;
     display: block;
-    width: 0;
-    height: 150%;
-}
+    margin-right: 2.35765%;
+    width: 100%; }
+    section#bg2 h2.right:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 500px) {
+      section#bg2 h2.right {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-left: 17.05961%; }
+        section#bg2 h2.right:last-child {
+          margin-right: 0; } }
+  section#bg2 h2 {
+    padding: 10px;
+    border-radius: 10%; }
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
+div#projects {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10%; }
+  div#projects:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 500px) {
+    div#projects {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      clear: left; }
+      div#projects:last-child {
+        margin-right: 0; } }
+  div#projects img {
+    max-width: 80%;
+    max-height: 150px;
+    margin: 15px; }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
+@keyframes fadein {
+  from {
+    opacity: 0; }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
 
-.invisible {
-    visibility: hidden;
-}
+  to {
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
+  to {
+    opacity: 1; } }
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
 
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+  to {
+    opacity: 1; } }

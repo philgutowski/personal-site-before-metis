@@ -1,9 +1,29 @@
 /*
-Errno::ENOENT: No such file or directory @ rb_sysopen - all
+Syntax error: Invalid property: "Backtrace:" (no value).
+        on line 4 of all
+
+1: /*
+2: Errno::ENOENT: No such file or directory @ rb_sysopen - all
+3: 
+4: Backtrace:
+5: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:405:in `read'
+6: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'
+7: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+8: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `each'
+9: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
 
 Backtrace:
-/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:405:in `read'
-/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'
+all:4
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:737:in `parse_property'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:699:in `parse_property_or_rule'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:665:in `parse_line'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:543:in `build_tree'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:562:in `block in append_children'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:561:in `each'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:561:in `append_children'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:412:in `_to_tree'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/engine.rb:274:in `render'
+/Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
 /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
 /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `each'
 /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
@@ -22,4 +42,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - all"; }
+  content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of all\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory @ rb_sysopen - all\A 3: \A 4: Backtrace:\A 5: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:405:in `read'\A 6: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'\A 7: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'\A 8: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `each'\A 9: /Users/PhilGutowski/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.3.6/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'"; }
